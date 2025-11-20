@@ -7,6 +7,7 @@ body {
 .container {
   margin: 140px auto;
   max-width: 600px;
+  padding: 0 24px;
 }
 
 h1 {
@@ -28,8 +29,14 @@ form {
   border-radius: 10px;
   box-shadow: 0 20px 60px rgba(65, 50, 100, 0.08);
   display: flex;
+  justify-content: center;
+
   gap: 10px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 420px) {
+    flex-wrap: wrap;
+  }
 }
 
 .topic-input {
@@ -39,6 +46,8 @@ form {
   border-radius: 50px;
   width: 80%;
   font-size: 16px;
+  outline-width: 1px;
+  outline-color: #272044;
 }
 
 .submit-btn {
@@ -61,6 +70,11 @@ form {
   line-height: 2.5;
 }
 
+.poem strong {
+  color: #885df1;
+}
+
 footer {
   text-align: center;
+  font-size: 14px;
 }
